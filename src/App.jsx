@@ -3,13 +3,14 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Todo from './components/todo';
+import Todo from './components/TODO/Todo';
 import Index from './components/Bharat-Clock/index';
 import Fragment from './components/Fragments/Fragment';
 import Map from './components/Map Method/map';
 import ConditionRenderting from './components/Conditions/ConditionalRendering';
 import DataPassing from './components/Props/DataPassing';
 import Index_CSS_Module from './components/CSS-Modules/index-css-module';
+import PassingChildren from './components/Passing-Children/PassingChildren';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -21,15 +22,16 @@ function App() {
     // <Map />
     // <ConditionRenderting> </ConditionRenderting>
     // <DataPassing></DataPassing>
-    <>
-      <div className="container mt-5">
-        <div className="row justify-content-center">
-          <div className="col-8">
-            <Index_CSS_Module></Index_CSS_Module>
-          </div>
-        </div>
-      </div>
-    </>
+    <PassingChildren />
+    // <>
+    //   <div className="container mt-5">
+    //     <div className="row justify-content-center">
+    //       <div className="col-8">
+    //         <Index_CSS_Module></Index_CSS_Module>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </>
     //   <div>
     //     <a href="https://vite.dev" target="_blank">
     //       <img src={viteLogo} className="logo" alt="Vite logo" />

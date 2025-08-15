@@ -1,6 +1,8 @@
+import styles from './index-css-module.module.css';
+
 const Index_CSS_Module = () => {
     return <>
-        <h1>CSS Modules</h1>
+        <h1 className={`${styles.h1} text-center`}>CSS Modules</h1>
         <ol>
             <li>
                 <strong>Localized</strong> class names to <strong>avoid global conflicts.</strong></li>
